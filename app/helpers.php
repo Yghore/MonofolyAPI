@@ -1,5 +1,7 @@
 <?php 
 
+
+
 use Illuminate\Support\Str;
 
 if (! function_exists('menu_create_classic')) {
@@ -39,21 +41,41 @@ if (! function_exists('menu_create_title')) {
 if (! function_exists('menu_create_dropdown')) {
     function menu_create_dropdown($title = "", $icon = "", $subtitle = "", $sub = [["OTHER", "OTHER/"], ["OTHER2", "OTHER2/"]])
     {
+        $active = "";
+        $activeurl = "";
+        $show = "";
+        foreach($sub as $items)
+        {
+            if(str_contains(url()->current(), $items[1]))
+            {
+                $active .= "active";
+                $show .= "show";
+                $activeurl = $items[1];
+                break;
+            }
+        }
         $cat = "";
-        $slug = Str::random(8);
+        $slug = str_replace(" ", "_", $title). Str::random(2);
 
         foreach ($sub as $items) 
         {
-            $cat .= ' <a class="collapse-item" href="'. $items[1] .'">'. $items[0] .'</a>';
+            if($items[1] == $activeurl){
+                $cat .= ' <a class="collapse-item active" href="'. $items[1] .'">'. $items[0] .'</a>';
+            }
+            else 
+            {
+                $cat .= ' <a class="collapse-item" href="'. $items[1] .'">'. $items[0] .'</a>';
+            }
+           
         }
         return '
-        <li class="nav-item">
+        <li class="nav-item '. $active .'">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#'. $slug .'"
             aria-expanded="true" aria-controls="'. $slug .'">
             <i class="fas '. $icon .'"></i>
             <span>'. $title .'</span>
         </a>
-        <div id="'. $slug .'" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="'. $slug .'" class="collapse '. $show .'" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">'. $subtitle .'</h6>
                 '. $cat .'

@@ -28,21 +28,44 @@
 
             {!! menu_create_divider() !!}
 
+
+            {{-- Gestion des utilisateurs --}}
+
             {!! menu_create_title("Utilisateurs") !!}
 
-            {!! menu_create_classic("Liste des utilisateurs", "fa-users") !!}
+            {!! menu_create_classic("Gestion des utilisateurs", "fa-users", route('users.list')) !!}
 
-            {!! menu_create_dropdown("Gestion des utilisateurs", "fa-users", "SUBTITLE", [['Utilisateurs', 'users/'], ['Ajouter', 'add/'], ['Remove', 'remove/']]) !!}
 
+            {{-- Cases du jeu --}}
 
             {!! menu_create_divider() !!}
 
             {!! menu_create_title("Cases du jeu") !!}
 
-            {!! menu_create_dropdown("Classique", "fa-users", "Mode classique", [['Listes', 'liste/'], ['Ajouter', 'add/'], ['Supprimer', 'remove/']]) !!}
-            {!! menu_create_dropdown("Weed", "fa-users", "Mode classique", [['Listes', 'liste/'], ['Ajouter', 'add/'], ['Supprimer', 'remove/']]) !!}
-            {!! menu_create_dropdown("Love", "fa-users", "Mode classique", [['Listes', 'liste/'], ['Ajouter', 'add/'], ['Supprimer', 'remove/']]) !!}
+            {{-- Mode classique --}}
+
+            {!! menu_create_title("Mode Classique") !!}
+
+            {!! menu_create_dropdown("Cases", "fa-dice-one", "Cases", [['Listes', route('cases.list', 'classic')], ['Ajouter', route('cases.add', 'classic')]]) !!}
+            {!! menu_create_dropdown("Carte spéciaux", "fa-dolly-flatbed", "Carte", [['Listes', route('specialcards.list', 'classic')], ['Ajouter', route('specialcards.add', 'classic')]]) !!}
+           
+            {!! menu_create_divider() !!}
+
+            {{-- Mode weed --}}
+
+            {!! menu_create_title("Mode Weed") !!}
+           
+            {!! menu_create_dropdown("Cases", "fa-dice-two", "Cases", [['Listes', route('cases.list', 'weed')], ['Ajouter', route('cases.add', 'weed')]]) !!}
+            {!! menu_create_dropdown("Carte spéciaux", "fa-dolly-flatbed", "Carte", [['Listes', route('specialcards.list', 'weed')], ['Ajouter', route('specialcards.add', 'weed')]]) !!}
+
+            {!! menu_create_divider() !!}
+
+            {{-- Mode love --}}
+
+            {!! menu_create_title("Mode Love") !!}
             
+            {!! menu_create_dropdown("Cases", "fa-dice-three", "Cases", [['Listes', route('cases.list', 'love')], ['Ajouter', route('cases.add', 'love')]]) !!}
+            {!! menu_create_dropdown("Carte spéciaux", "fa-dolly-flatbed", "Carte", [['Listes', route('specialcards.list', 'love')], ['Ajouter', route('specialcards.add', 'love')]]) !!}
 
 
 
@@ -156,7 +179,7 @@
                                 </h6>
                                 <a class="dropdown-item d-flex align-items-center" href="#">
                                     <div class="dropdown-list-image mr-3">
-                                        <img class="rounded-circle" src="storage/img/undraw_profile_1.svg"
+                                        <img class="rounded-circle" src="{{ asset('storage/img/undraw_profile_1.svg') }}"
                                             alt="">
                                         <div class="status-indicator bg-success"></div>
                                     </div>
@@ -177,7 +200,7 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-gray-600 small">DEMO</span>
                                 <img class="img-profile rounded-circle"
-                                    src="storage/img/undraw_profile.svg">
+                                    src="{{ asset('storage/img/undraw_profile.svg') }}">
                             </a>
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

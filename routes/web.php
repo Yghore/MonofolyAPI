@@ -14,5 +14,28 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('blank');
+    return view('home');
 });
+
+
+Route::prefix('users')->group(function () {
+    Route::get('list', 'UserController@viewList')->name('users.list');
+    Route::get('add', 'UserController@viewAdd')->name('users.add');
+    Route::get('edit', 'UserController@viewEdit')->name('users.add');
+});
+
+
+
+Route::prefix('cases')->group(function () {
+    Route::get('list/{mode}', 'CasesController@viewList')->name('cases.list');
+    Route::get('add/{mode}', 'CasesController@viewAdd')->name('cases.add');
+    Route::get('edit/{mode}', 'CasesController@viewEdit')->name('cases.add');
+});
+
+Route::prefix('specialcards')->group(function () {
+    Route::get('list/{mode}', 'SpecialCardController@viewList')->name('specialcards.list');
+    Route::get('add/{mode}', 'SpecialCardController@viewAdd')->name('specialcards.add');
+    Route::get('edit/{mode}', 'SpecialCardController@viewEdit')->name('specialcards.add');
+});
+
+
