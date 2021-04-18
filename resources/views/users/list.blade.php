@@ -2,6 +2,17 @@
 
 @section('title', 'MonofolyAPI')
 
+@push('js')
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.js"></script>
+<script>
+
+    $(document).ready(function() {
+      $('#dataUser').DataTable();
+    });
+    
+    </script>
+@endpush
+
 @section('content')
 
 
@@ -34,7 +45,7 @@
                                             <td>31/12/1970 - 00:00</td>
                                             <td>Administration</td>
                                             <td>
-                                                <i class="fas fa-edit"></i>
+                                                <a href="{{ route('users.edit') }}"><i class="fas fa-edit"></i></a>
                                                 <i class="fas fa-trash"></i>
                                             </td>
                                         </tr>
@@ -51,13 +62,3 @@
 @endsection
 
 
-{{-- @push('js')
-<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.js"></script>
-<script>
-
-    $(document).ready(function() {
-      $('#dataUser').DataTable();
-    });
-    
-    </script>
-@endpush --}}

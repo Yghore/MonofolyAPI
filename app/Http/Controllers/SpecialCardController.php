@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class SpecialCardController extends Controller
 {
@@ -20,4 +21,12 @@ class SpecialCardController extends Controller
     {
         return view('specialcards.edit');
     }
+
+
+    private function getList()
+    {
+        $cardsTable = DB::table('cards')->get();
+        
+    }
+
 }

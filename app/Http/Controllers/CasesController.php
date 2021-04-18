@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class CasesController extends Controller
 {
-    public function viewList()
+    public function viewList($mod)
     {
-        return view('cases.list');
+        $cards = $this->getList($mod);
+        return view('cases.list')
+        ->with('cards', $cards);
     }
 
     public function viewAdd()
@@ -16,8 +19,26 @@ class CasesController extends Controller
         return view('cases.add');
     }
 
-    public function viewEdit()
+    public function viewEdit($mod, $id)
     {
-        return view('cases.edit');
+        $card = $this->getCardWithModAndId($mod, $id);
+        return view('cases.edit')
+        ->with('card', $card);
     }
+
+    private function getList($mod)
+    {
+        $cardsTable = DB::table('cards')->where('game', '=', $mod)->get();
+        return $cardsTable;
+        
+    }
+
+    private function getCardWithModAndId($mod, $id)
+    {
+        $card = DB::table('cards')->where('game', '=', $mod)->where('id', '=', $id)->first();
+        return $card;
+    }
+
+
+
 }

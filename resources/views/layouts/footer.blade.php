@@ -6,7 +6,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; MonofolyAPI</span>
+            <span>With <a href="https://startbootstrap.com/">SB</a></span> | <span>Copyright &copy; MonofolyAPI created by <a href="https://kiwigdc.fr">K-GDC</a></span>
         </div>
     </div>
 </footer>

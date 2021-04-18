@@ -59,16 +59,19 @@ BUTTONS --}}
             <div>
                 <div class="row">
                     <div class="mb-2 col-lg-4">
-                        <input type="number" max=40 min=0 placeholder="ID" class="form-control">
+                        <input type="number" disabled max=40 min=0 placeholder="ID" class="form-control">
                     </div>
                     <div class="mb-2 col-lg-4">
-                        <input type="number" max=8 min=0 placeholder="Id pour la case" value=0 class="form-control">
+                        <input type="number" disabled max=8 min=0 placeholder="Id pour la case" value=0 class="form-control">
                     </div>
                     <div class="mb-2 col-lg-4">
                         <input type="number" max=3 min=1 value=3 placeholder="Nombre de bouttons" id="number_buttons" onchange="changeButtons()" class="form-control">
                     </div>
-                    <div class="mb-2 col-lg-12">
+                    <div class="mb-2 col-lg-6">
                         <input type="text" placeholder="Titre" class="form-control">
+                    </div>
+                    <div class="mb-2 col-lg-6">
+                        <input type="text" maxlength="5" placeholder="Quantité" class="form-control">
                     </div>
                     <div class="mb-2  col-lg-12">
                         <textarea name="" id="" cols="30" rows="10" class="form-control" placeholder="Description de la carte"></textarea>

@@ -66,7 +66,7 @@
                                                 <a href="#" class="btn btn-danger">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="#" class="btn btn-success">
+                                                <a href="{{ route('specialcards.edit', 'classic') }}" class="btn btn-success">
                                                     <i class="fas fa-edit"></i>
                                                 </a>
                                             </td>
