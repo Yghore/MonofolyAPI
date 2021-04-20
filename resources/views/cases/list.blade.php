@@ -2,30 +2,40 @@
 
 @section('title', 'MonofolyAPI')
 
-@section('content')
-@extends('layouts.app')
-
-@section('title', 'MonofolyAPI')
-
 @push('js')
     
-<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.24/datatables.min.js"></script>
-<script>
 
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs4/dt-1.10.24/af-2.3.5/fh-3.1.8/sb-1.0.1/sl-1.3.3/datatables.min.css"/>
+ 
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/dt-1.10.24/af-2.3.5/fh-3.1.8/sb-1.0.1/sl-1.3.3/datatables.min.js"></script>
+<script>
     $(document).ready(function() {
-      $('#dataspecialcard').DataTable();
+        $('#dataspecialcard').DataTable({
+            ordering: true,
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.10.24/i18n/French.json'
+            }
+        });
     });
-    
+
     </script>
 @endpush
 
 
 @section('content')
+                    @if(session('success'))
+                    <div class="card mb-4 py-3 border-bottom-success" style="background-color=#f8d7da;">
+                        <div class="card-body">
+                            
+                               <h3 class="text-gray-900">{{ session('success') }}</h3>
+                        </div>
+                    </div>
+                    @endif
 
 
                     <!-- Page Heading -->
-                    <h1 class="h3 mb-2 text-gray-800">Cartes spéciaux</h1>
-                    <p class="mb-4">Ici tu peux Modifier les cartes spéciaux du monofoly.</p>
+                    <h1 class="h3 mb-2 text-gray-800">Les cases :</h1>
+                    <p class="mb-4">Ici tu peux Modifier les cases du monofoly.</p>
 
                     <!-- DataTales Example -->
                     <div class="card shadow mb-4">
@@ -37,7 +47,6 @@
                                 <table class="table table-bordered" id="dataspecialcard" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>#ID</th>
                                             <th>Cases</th>
                                             <th>ID pour la cases</th>
                                             <th>Nom</th>
@@ -50,7 +59,6 @@
                                     <tbody>
                                         @foreach ($cards as $card)
                                         <tr>
-                                            <td>{{ $card->id }}</td>
                                             <td>{{ $card->case }}</td>
                                             <td>{{ $card->n_case }}</td>
                                             <td>{{ $card->title }}</td>
@@ -69,10 +77,10 @@
 
                                             </td>
                                             <td>
-                                                <a href="#" class="btn btn-danger">
+                                                <a href="{{ route('cases.remove', [$card->id, $mod]) }}" class="btn btn-danger">
                                                     <i class="fas fa-trash"></i>
                                                 </a>
-                                                <a href="{{ route('cases.edit', ['classic', $card->id],) }}" class="btn btn-success">
+                                                <a href="{{ route('cases.edit', [$mod, $card->id],) }}" class="btn btn-success">
                                                     <i class="fas fa-edit"></i>
                                                 </a>
                                             </td>
@@ -89,6 +97,3 @@
 @endsection
 
 
-
-
-@endsection

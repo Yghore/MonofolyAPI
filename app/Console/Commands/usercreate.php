@@ -49,7 +49,6 @@ class usercreate extends Command
             'email' => $email,
             'password' => Hash::make($password),
         ]);
-        DB::table('users')->update(['permission' => 2046]);
         $this->comment('User details:');
         $this->comment('User: ' . $name);
         $this->comment('Email:' . $email);

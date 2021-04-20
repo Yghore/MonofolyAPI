@@ -14,16 +14,11 @@
                 </div>
                 <div class="sidebar-brand-text mx-3">Monofoly <sup>API</sup></div>
             </a>
+            
+            {!! menu_create_divider() !!}
 
-            <!-- Divider -->
-            <hr class="sidebar-divider my-0">
+            {!! menu_create_classic("Dashboard", "fa-fw fa-tachometer-alt", route('home')) !!}
 
-            <!-- Nav Item - Dashboard -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
-                    <span>Dashboard</span></a>
-            </li>
 
 
             {!! menu_create_divider() !!}
@@ -198,7 +193,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">DEMO</span>
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
                                 <img class="img-profile rounded-circle"
                                     src="{{ asset('storage/img/undraw_profile.svg') }}">
                             </a>
@@ -214,7 +209,7 @@
                                     Settings
                                 </a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <a class="dropdown-item" href="{{ route('login.logout') }}">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
