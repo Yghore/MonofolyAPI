@@ -19,3 +19,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('cards/{mod}/{id?}', 'Api\CardController@index');
+Route::get('version/', 'Api\VersionController@index');

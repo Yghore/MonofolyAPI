@@ -17206,133 +17206,133 @@ form.user .btn-user {
 
 @-webkit-keyframes noise-anim {
   0% {
-    clip: rect(33px, 9999px, 37px, 0);
+    clip: rect(6px, 9999px, 73px, 0);
   }
   5% {
-    clip: rect(3px, 9999px, 34px, 0);
+    clip: rect(73px, 9999px, 23px, 0);
   }
   10% {
-    clip: rect(4px, 9999px, 31px, 0);
+    clip: rect(92px, 9999px, 14px, 0);
   }
   15% {
-    clip: rect(44px, 9999px, 4px, 0);
+    clip: rect(14px, 9999px, 88px, 0);
   }
   20% {
-    clip: rect(99px, 9999px, 26px, 0);
+    clip: rect(82px, 9999px, 52px, 0);
   }
   25% {
-    clip: rect(47px, 9999px, 8px, 0);
+    clip: rect(54px, 9999px, 53px, 0);
   }
   30% {
-    clip: rect(46px, 9999px, 90px, 0);
+    clip: rect(96px, 9999px, 81px, 0);
   }
   35% {
-    clip: rect(76px, 9999px, 16px, 0);
+    clip: rect(27px, 9999px, 61px, 0);
   }
   40% {
-    clip: rect(95px, 9999px, 93px, 0);
+    clip: rect(20px, 9999px, 13px, 0);
   }
   45% {
-    clip: rect(60px, 9999px, 58px, 0);
+    clip: rect(89px, 9999px, 62px, 0);
   }
   50% {
-    clip: rect(82px, 9999px, 56px, 0);
+    clip: rect(93px, 9999px, 12px, 0);
   }
   55% {
-    clip: rect(61px, 9999px, 68px, 0);
+    clip: rect(28px, 9999px, 56px, 0);
   }
   60% {
-    clip: rect(10px, 9999px, 30px, 0);
+    clip: rect(82px, 9999px, 11px, 0);
   }
   65% {
-    clip: rect(82px, 9999px, 23px, 0);
+    clip: rect(87px, 9999px, 39px, 0);
   }
   70% {
-    clip: rect(2px, 9999px, 80px, 0);
+    clip: rect(50px, 9999px, 82px, 0);
   }
   75% {
-    clip: rect(74px, 9999px, 49px, 0);
+    clip: rect(7px, 9999px, 16px, 0);
   }
   80% {
-    clip: rect(8px, 9999px, 15px, 0);
+    clip: rect(6px, 9999px, 8px, 0);
   }
   85% {
-    clip: rect(90px, 9999px, 49px, 0);
+    clip: rect(85px, 9999px, 10px, 0);
   }
   90% {
-    clip: rect(36px, 9999px, 87px, 0);
+    clip: rect(27px, 9999px, 31px, 0);
   }
   95% {
-    clip: rect(64px, 9999px, 58px, 0);
+    clip: rect(38px, 9999px, 89px, 0);
   }
   100% {
-    clip: rect(84px, 9999px, 92px, 0);
+    clip: rect(6px, 9999px, 47px, 0);
   }
 }
 
 @keyframes noise-anim {
   0% {
-    clip: rect(33px, 9999px, 37px, 0);
+    clip: rect(6px, 9999px, 73px, 0);
   }
   5% {
-    clip: rect(3px, 9999px, 34px, 0);
+    clip: rect(73px, 9999px, 23px, 0);
   }
   10% {
-    clip: rect(4px, 9999px, 31px, 0);
+    clip: rect(92px, 9999px, 14px, 0);
   }
   15% {
-    clip: rect(44px, 9999px, 4px, 0);
+    clip: rect(14px, 9999px, 88px, 0);
   }
   20% {
-    clip: rect(99px, 9999px, 26px, 0);
+    clip: rect(82px, 9999px, 52px, 0);
   }
   25% {
-    clip: rect(47px, 9999px, 8px, 0);
+    clip: rect(54px, 9999px, 53px, 0);
   }
   30% {
-    clip: rect(46px, 9999px, 90px, 0);
+    clip: rect(96px, 9999px, 81px, 0);
   }
   35% {
-    clip: rect(76px, 9999px, 16px, 0);
+    clip: rect(27px, 9999px, 61px, 0);
   }
   40% {
-    clip: rect(95px, 9999px, 93px, 0);
+    clip: rect(20px, 9999px, 13px, 0);
   }
   45% {
-    clip: rect(60px, 9999px, 58px, 0);
+    clip: rect(89px, 9999px, 62px, 0);
   }
   50% {
-    clip: rect(82px, 9999px, 56px, 0);
+    clip: rect(93px, 9999px, 12px, 0);
   }
   55% {
-    clip: rect(61px, 9999px, 68px, 0);
+    clip: rect(28px, 9999px, 56px, 0);
   }
   60% {
-    clip: rect(10px, 9999px, 30px, 0);
+    clip: rect(82px, 9999px, 11px, 0);
   }
   65% {
-    clip: rect(82px, 9999px, 23px, 0);
+    clip: rect(87px, 9999px, 39px, 0);
   }
   70% {
-    clip: rect(2px, 9999px, 80px, 0);
+    clip: rect(50px, 9999px, 82px, 0);
   }
   75% {
-    clip: rect(74px, 9999px, 49px, 0);
+    clip: rect(7px, 9999px, 16px, 0);
   }
   80% {
-    clip: rect(8px, 9999px, 15px, 0);
+    clip: rect(6px, 9999px, 8px, 0);
   }
   85% {
-    clip: rect(90px, 9999px, 49px, 0);
+    clip: rect(85px, 9999px, 10px, 0);
   }
   90% {
-    clip: rect(36px, 9999px, 87px, 0);
+    clip: rect(27px, 9999px, 31px, 0);
   }
   95% {
-    clip: rect(64px, 9999px, 58px, 0);
+    clip: rect(38px, 9999px, 89px, 0);
   }
   100% {
-    clip: rect(84px, 9999px, 92px, 0);
+    clip: rect(6px, 9999px, 47px, 0);
   }
 }
 .error:after {
@@ -17350,133 +17350,133 @@ form.user .btn-user {
 
 @-webkit-keyframes noise-anim-2 {
   0% {
-    clip: rect(50px, 9999px, 70px, 0);
+    clip: rect(29px, 9999px, 12px, 0);
   }
   5% {
-    clip: rect(7px, 9999px, 37px, 0);
+    clip: rect(52px, 9999px, 80px, 0);
   }
   10% {
-    clip: rect(61px, 9999px, 6px, 0);
+    clip: rect(46px, 9999px, 45px, 0);
   }
   15% {
-    clip: rect(52px, 9999px, 91px, 0);
+    clip: rect(40px, 9999px, 4px, 0);
   }
   20% {
-    clip: rect(4px, 9999px, 70px, 0);
+    clip: rect(4px, 9999px, 95px, 0);
   }
   25% {
-    clip: rect(71px, 9999px, 14px, 0);
+    clip: rect(38px, 9999px, 83px, 0);
   }
   30% {
-    clip: rect(89px, 9999px, 48px, 0);
+    clip: rect(96px, 9999px, 61px, 0);
   }
   35% {
-    clip: rect(24px, 9999px, 76px, 0);
+    clip: rect(20px, 9999px, 59px, 0);
   }
   40% {
-    clip: rect(67px, 9999px, 79px, 0);
+    clip: rect(84px, 9999px, 29px, 0);
   }
   45% {
-    clip: rect(52px, 9999px, 18px, 0);
+    clip: rect(29px, 9999px, 23px, 0);
   }
   50% {
-    clip: rect(75px, 9999px, 69px, 0);
+    clip: rect(38px, 9999px, 60px, 0);
   }
   55% {
-    clip: rect(25px, 9999px, 21px, 0);
+    clip: rect(77px, 9999px, 92px, 0);
   }
   60% {
-    clip: rect(47px, 9999px, 12px, 0);
+    clip: rect(36px, 9999px, 9px, 0);
   }
   65% {
-    clip: rect(6px, 9999px, 81px, 0);
+    clip: rect(12px, 9999px, 17px, 0);
   }
   70% {
-    clip: rect(22px, 9999px, 53px, 0);
+    clip: rect(42px, 9999px, 91px, 0);
   }
   75% {
-    clip: rect(61px, 9999px, 24px, 0);
+    clip: rect(83px, 9999px, 5px, 0);
   }
   80% {
-    clip: rect(45px, 9999px, 15px, 0);
+    clip: rect(18px, 9999px, 85px, 0);
   }
   85% {
-    clip: rect(63px, 9999px, 41px, 0);
+    clip: rect(72px, 9999px, 26px, 0);
   }
   90% {
-    clip: rect(96px, 9999px, 82px, 0);
+    clip: rect(80px, 9999px, 2px, 0);
   }
   95% {
-    clip: rect(15px, 9999px, 68px, 0);
+    clip: rect(19px, 9999px, 88px, 0);
   }
   100% {
-    clip: rect(67px, 9999px, 7px, 0);
+    clip: rect(46px, 9999px, 91px, 0);
   }
 }
 
 @keyframes noise-anim-2 {
   0% {
-    clip: rect(50px, 9999px, 70px, 0);
+    clip: rect(29px, 9999px, 12px, 0);
   }
   5% {
-    clip: rect(7px, 9999px, 37px, 0);
+    clip: rect(52px, 9999px, 80px, 0);
   }
   10% {
-    clip: rect(61px, 9999px, 6px, 0);
+    clip: rect(46px, 9999px, 45px, 0);
   }
   15% {
-    clip: rect(52px, 9999px, 91px, 0);
+    clip: rect(40px, 9999px, 4px, 0);
   }
   20% {
-    clip: rect(4px, 9999px, 70px, 0);
+    clip: rect(4px, 9999px, 95px, 0);
   }
   25% {
-    clip: rect(71px, 9999px, 14px, 0);
+    clip: rect(38px, 9999px, 83px, 0);
   }
   30% {
-    clip: rect(89px, 9999px, 48px, 0);
+    clip: rect(96px, 9999px, 61px, 0);
   }
   35% {
-    clip: rect(24px, 9999px, 76px, 0);
+    clip: rect(20px, 9999px, 59px, 0);
   }
   40% {
-    clip: rect(67px, 9999px, 79px, 0);
+    clip: rect(84px, 9999px, 29px, 0);
   }
   45% {
-    clip: rect(52px, 9999px, 18px, 0);
+    clip: rect(29px, 9999px, 23px, 0);
   }
   50% {
-    clip: rect(75px, 9999px, 69px, 0);
+    clip: rect(38px, 9999px, 60px, 0);
   }
   55% {
-    clip: rect(25px, 9999px, 21px, 0);
+    clip: rect(77px, 9999px, 92px, 0);
   }
   60% {
-    clip: rect(47px, 9999px, 12px, 0);
+    clip: rect(36px, 9999px, 9px, 0);
   }
   65% {
-    clip: rect(6px, 9999px, 81px, 0);
+    clip: rect(12px, 9999px, 17px, 0);
   }
   70% {
-    clip: rect(22px, 9999px, 53px, 0);
+    clip: rect(42px, 9999px, 91px, 0);
   }
   75% {
-    clip: rect(61px, 9999px, 24px, 0);
+    clip: rect(83px, 9999px, 5px, 0);
   }
   80% {
-    clip: rect(45px, 9999px, 15px, 0);
+    clip: rect(18px, 9999px, 85px, 0);
   }
   85% {
-    clip: rect(63px, 9999px, 41px, 0);
+    clip: rect(72px, 9999px, 26px, 0);
   }
   90% {
-    clip: rect(96px, 9999px, 82px, 0);
+    clip: rect(80px, 9999px, 2px, 0);
   }
   95% {
-    clip: rect(15px, 9999px, 68px, 0);
+    clip: rect(19px, 9999px, 88px, 0);
   }
   100% {
-    clip: rect(67px, 9999px, 7px, 0);
+    clip: rect(46px, 9999px, 91px, 0);
   }
 }
 .error:before {
@@ -17503,4 +17503,141 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  --active: #275EFE;
+  --active-inner: #fff;
+  --focus: 2px rgba(39, 94, 254, .3);
+  --border: #BBC1E1;
+  --border-hover: #275EFE;
+  --background: #fff;
+  --disabled: #F6F8FF;
+  --disabled-inner: #E1E6F9;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  height: 21px;
+  outline: none;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid var(--bc, var(--border));
+  background: var(--b, var(--background));
+  transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+}
+input[type=checkbox]:after,
+input[type=radio]:after {
+  content: "";
+  display: block;
+  left: 0;
+  top: 0;
+  position: absolute;
+  transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+}
+input[type=checkbox]:checked,
+input[type=radio]:checked {
+  --b: var(--active);
+  --bc: var(--active);
+  --d-o: .3s;
+  --d-t: .6s;
+  --d-t-e: cubic-bezier(.2, .85, .32, 1.2);
+}
+input[type=checkbox]:disabled,
+input[type=radio]:disabled {
+  --b: var(--disabled);
+  cursor: not-allowed;
+  opacity: 0.9;
+}
+input[type=checkbox]:disabled:checked,
+input[type=radio]:disabled:checked {
+  --b: var(--disabled-inner);
+  --bc: var(--border);
+}
+input[type=checkbox]:disabled + label,
+input[type=radio]:disabled + label {
+  cursor: not-allowed;
+}
+input[type=checkbox]:hover:not(:checked):not(:disabled),
+input[type=radio]:hover:not(:checked):not(:disabled) {
+  --bc: var(--border-hover);
+}
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+  box-shadow: 0 0 0 var(--focus);
+}
+input[type=checkbox]:not(.switch),
+input[type=radio]:not(.switch) {
+  width: 21px;
+}
+input[type=checkbox]:not(.switch):after,
+input[type=radio]:not(.switch):after {
+  opacity: var(--o, 0);
+}
+input[type=checkbox]:not(.switch):checked,
+input[type=radio]:not(.switch):checked {
+  --o: 1;
+}
+input[type=checkbox] + label,
+input[type=radio] + label {
+  font-size: 14px;
+  line-height: 21px;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+input[type=checkbox]:not(.switch) {
+  border-radius: 7px;
+}
+input[type=checkbox]:not(.switch):after {
+  width: 5px;
+  height: 9px;
+  border: 2px solid var(--active-inner);
+  border-top: 0;
+  border-left: 0;
+  left: 7px;
+  top: 4px;
+  transform: rotate(var(--r, 20deg));
+}
+input[type=checkbox]:not(.switch):checked {
+  --r: 43deg;
+}
+input[type=checkbox].switch {
+  width: 38px;
+  border-radius: 11px;
+}
+input[type=checkbox].switch:after {
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: var(--ab, var(--border));
+  transform: translateX(var(--x, 0));
+}
+input[type=checkbox].switch:checked {
+  --ab: var(--active-inner);
+  --x: 17px;
+}
+input[type=checkbox].switch:disabled:not(:checked):after {
+  opacity: 0.6;
+}
+
+input[type=radio] {
+  border-radius: 50%;
+}
+input[type=radio]:after {
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: var(--active-inner);
+  opacity: 0;
+  transform: scale(var(--s, 0.7));
+}
+input[type=radio]:checked {
+  --s: .5;
 }

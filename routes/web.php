@@ -47,6 +47,9 @@ Route::middleware(['auth'])->group(function () {
         Route::get('edit/{mode}/{id}', 'SpecialCardController@viewEdit')->name('specialcards.edit');
     });
     
+    Route::get('version', 'VersionController@index')->name('version');
+    Route::post('version', 'VersionController@addNewVersion')->name('version');
+
     Route::get('logout', 'LogoutController@logout')->name('login.logout');
 
 

@@ -7,8 +7,13 @@ use Illuminate\Support\Str;
 if (! function_exists('menu_create_classic')) {
     function menu_create_classic($name, $icon = " ", $redirect = "/")
     {
+        $active = "";
+        if(str_contains(url()->current(), $redirect))
+            {
+                $active .= "active";
+            }
         return '
-        <li class="nav-item">
+        <li class="nav-item '. $active .'">
         <a class="nav-link" href="'. $redirect .'">
             <i class="fas '. $icon .'"></i>
             <span>'. $name .'</span></a>

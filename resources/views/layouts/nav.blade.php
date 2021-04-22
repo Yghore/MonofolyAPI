@@ -26,10 +26,10 @@
 
             {{-- Gestion des utilisateurs --}}
 
-            {!! menu_create_title("Utilisateurs") !!}
+            {!! menu_create_title("Globals") !!}
 
             {!! menu_create_classic("Gestion des utilisateurs", "fa-users", route('users.list')) !!}
-
+            {!! menu_create_classic("Envoyer la mise à jour", "fa-file-upload", route('version')) !!}
 
             {{-- Cases du jeu --}}
 
